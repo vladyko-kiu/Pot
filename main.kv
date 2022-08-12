@@ -1,0 +1,62 @@
+<MainLayout>:
+	BoxLayout:
+		orientation: 'vertical'
+		size: root.width, root.height
+
+		BoxLayout:
+			orientation: 'horizontal'
+			size: root.width, root.height
+
+			BoxLayout:
+				orientation: 'vertical'
+				size: root.width, root.height
+
+				TextInput:
+					id: ti_1
+					on_text_validate: app.recalc(1)
+					background_color: (1, 1, 1, 1)
+					multiline: False
+					halign: 'center'
+
+				TextInput:
+					id: ti_2
+					on_text_validate: app.recalc(2)
+					background_color: (1, 1, 1, 1)
+					multiline: False
+					halign: 'center'
+
+			BoxLayout:
+				orientation: 'vertical'
+				size: root.width, root.height
+
+				TextInput:
+					id: ti_3
+					on_text_validate: app.recalc(3)
+					background_color: (1, 1, 1, 1)
+					multiline: False
+					halign: 'center'
+
+				TextInput:
+					id: ti_4
+					on_text_validate: app.recalc(4)
+					background_color: (1, 1, 1, 1)
+					multiline: False
+					halign: 'center'
+
+		BoxLayout:
+			orientation: 'vertical'
+			size: root.width, root.height
+
+			TextInput:
+				id: ti_5
+				on_text_validate: app.recalc(5)
+				background_color: (1, 1, 1, 1)
+				multiline: False
+				halign: 'center'
+
+			TextInput:
+				id: ti_6
+				on_text_validate: app.recalc(6)
+				background_color: (1, 1, 1, 1)
+				multiline: False
+				halign: 'center'
